@@ -1,0 +1,25 @@
+{{#if addNewAnswer}}
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">New Answer</h3>
+  </div>
+    <div class="panel-body">
+    <form>
+      <div class="form-group">
+        <label class="col-md-2" for="author">Author</label>
+        {{input value=author id="author"}}
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-2" for="content">Answer</label>
+        {{textarea value=content id="content"}}
+      </div>
+
+      <button class="btn btn-info" {{action 'saveAnswer' answer}}>Save</button>
+    </form>
+  </div>
+</div>
+
+{{else}}
+    <button class="btn btn-info" {{action 'answerFormShow'}}>New Answer</button>
+{{/if}}

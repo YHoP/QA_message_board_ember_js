@@ -15,24 +15,24 @@ export default Ember.Route.extend({
         question.save();
       }
 
-    //   saveComment(params) {
-    //     var newComment = this.store.createRecord('comment', params);
-    //     var post = params.post;
-    //     post.get('comments').addObject(newComment);
-    //     newComment.save().then(function() {
-    //       return post.save();
-    //     });
-    //     this.transitionTo('post', params.post);
-    //   },
-    //
-    //   updateComment(comment, params) {
-    //     debugger;
-    //     Object.keys(params).forEach(function(key) {
-    //       if(params[key] !== undefined) {
-    //         comment.set(key, params[key]);
-    //       }
-    //     });
-    //     comment.save();
-    //   }
+      saveAnswer(params) {
+        var newAnswer = this.store.createRecord('answer', params);
+        var question = params.question;
+        question.get('answers').addObject(newAnswer);
+        newAnswer.save().then(function() {
+          return question.save();
+        });
+        this.transitionTo('question', params.question);
+      },
+
+      editAnswer(answer, params) {
+        debugger;
+        Object.keys(params).forEach(function(key) {
+          if(params[key] !== undefined) {
+            answer.set(key, params[key]);
+          }
+        });
+        answer.save();
+      }
     }
 });
