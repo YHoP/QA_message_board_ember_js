@@ -1,0 +1,30 @@
+{{#if isEdited}}
+<p>Edited on {{question.date_edited}}</p>
+{{/if}}
+
+{{#if editQuestionForm}}
+  <h4>Edit Question</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label class="col-md-3" for="author">Author</label>
+        {{input value=author id="author" placeholder=question.author}}
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3" for="subject">Subject</label>
+        {{input value=subject id="subject" placeholder=question.subject}}
+      </div>
+
+      <div class="form-group">
+        <label class="col-md-3" for="content">Content</label>
+        {{textarea value=content id="content" placeholder=question.content}}
+      </div>
+
+      <button class="btn btn-info" {{action 'editQuestion' question}}>Edit</button>
+    </form>
+  </div>
+
+{{else}}
+    <button class="btn btn-info" {{action 'editFormShow'}}>Edit Question</button>
+{{/if}}
