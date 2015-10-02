@@ -1,0 +1,12 @@
+{{#each question.answers as |answer|}}
+  <div class="panel panel-warning">
+    <div class="panel-heading">
+      <h4 class="panel-title">{{answer.author}}</h4>
+    </div>
+    <div class="panel-body">
+        {{answer.content}}
+        <br>
+        {{edit-answer answer=answer editAnswer="editAnswer"}}
+    </div>
+  </div>
+{{/each}}
