@@ -12,7 +12,8 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('username'),
         content: this.get('content'),
-        date_added: today.toString(),
+        date_added: today.toLocaleString(),
+        date_edited: "",
         question: this.question
       };
       this.set('addNewAnswer', false);

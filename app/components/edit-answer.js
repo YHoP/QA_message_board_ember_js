@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         author: this.get('author'),
         subject: this.get('subject'),
         content: this.get('content'),
-        date_edited: today.toString(),
+        date_edited: today.toLocaleString(),
         question: this.question
       };
       this.set('editAnswerForm', false);

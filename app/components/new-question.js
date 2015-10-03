@@ -13,7 +13,8 @@ export default Ember.Component.extend({
         author: this.get('author'),
         subject: this.get('subject'),
         content: this.get('content'),
-        date_added: today.toString()
+        date_added: today.toLocaleString(),
+        date_edited: ""
       };
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
