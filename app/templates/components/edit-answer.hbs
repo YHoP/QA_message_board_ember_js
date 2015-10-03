@@ -1,0 +1,21 @@
+{{#if editAnswerForm}}
+  <h1>Edit Answer</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author" placeholder=answer.author}}
+      </div>
+
+      <div class="form-group">
+        <label for="content">Answer</label>
+        {{textarea value=content id="content" placeholder=answer.content}}
+      </div>
+
+      <button class="btn btn-info" {{action 'editAnswer' answer}}>Edit</button>
+    </form>
+  </div>
+
+{{else}}
+    <button class="btn btn-info" {{action 'editAnswerShow'}}>Edit Answer</button>
+{{/if}}

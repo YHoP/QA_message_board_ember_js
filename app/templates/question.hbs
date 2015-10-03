@@ -8,13 +8,13 @@
     <h5>{{model.content}}</h5>
 
     <p>Posted on {{model.date_added}}</p>
-    
+
     <div class="col-md-6">
       {{edit-question question=model editQuestion="editQuestion"}}
     </div>
   </div>
 </div>
 
-<!-- {{new-answer saveAnswer="saveAnswer" question=model}}
+{{new-answer saveAnswer="saveAnswer" question=model}}
 <br>
-{{answer-detail updateAnswer="updateAnswer" question=model}} -->
+{{answer-detail editAnswer="editAnswer" question=model}}
