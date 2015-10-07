@@ -8,13 +8,18 @@ export default Ember.Component.extend({
     },
 
     saveAnswer() {
+      var userName = this.get('user');
+      if (userName == undefined){
+        userName = "anonymous";
+      }
       var today = new Date();
       var params = {
-        user: this.get('username'),
+        user: userName,
+        question: this.question,
         content: this.get('content'),
         date_added: today.toLocaleString(),
-        date_edited: "",
-        question: this.question
+        date_edited: null,
+        vote: 0
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

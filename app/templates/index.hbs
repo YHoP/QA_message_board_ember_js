@@ -1,8 +1,7 @@
-<h2>Questions</h2>
-
 <ul class="list-group">
+  <li class="list-group-item list-group-item-info"><h3>Questions</h3></li>
   {{#each model.questions as |question|}}
-    <li class="list-group-item">{{#link-to 'question' question.id}}{{question.subject}} - by {{question.user}}{{/link-to}}</li>
+    <li class="list-group-item">{{#link-to 'question' question.id}}{{question.subject}} &emsp; &emsp; by {{question.user}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

@@ -6,8 +6,6 @@
     <title>Q &amp; A Message Board</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://maps.googleapis.com/maps/api/js?&callback=initialize"
-            async defer></script>
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
@@ -16,13 +14,13 @@
     {{content-for 'head-footer'}}
   </head>
 
-  <body onload="initialize()">
-    <div id="map" style="width: 900px; height: 480px;"></div>
+  <body>
+
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/qa-message-board.js"></script>
-
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js" ></script>
     {{content-for 'body-footer'}}
   </body>
 </html>

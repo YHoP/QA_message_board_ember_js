@@ -3,11 +3,6 @@
   <div>
     <form>
       <div class="form-group">
-        <label for="user">User</label>
-        {{input value=user id="user" placeholder=answer.user}}
-      </div>
-
-      <div class="form-group">
         <label for="content">Answer</label>
         {{textarea value=content id="content" placeholder=answer.content}}
       </div>
@@ -17,5 +12,5 @@
   </div>
 
 {{else}}
-    <button class="btn btn-info" {{action 'editAnswerShow'}}>Edit Answer</button>
+    <button class="btn btn-info" {{action 'editAnswerShow'}}>Edit</button>
 {{/if}}

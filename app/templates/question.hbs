@@ -1,20 +1,31 @@
-<div class="panel panel-success">
-  <div class="panel-heading">
-    <h2 class="panel-title">{{model.subject}}</h2>
-  </div>
-  <div class="panel-body">
-    <p>by {{model.user}}</p>
+<div class="col-md-6">
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      <h2 class="panel-title">{{model.subject}} &emsp; by {{model.user}}</h2>
+    </div>
+    <div class="panel-body">
+      <h5>{{model.content}}</h5>
 
-    <h5>{{model.content}}</h5>
+      <p>Posted on {{model.date_added}}</p>
 
-    <p>Posted on {{model.date_added}}</p>
-
-    <div class="col-md-6">
       {{edit-question question=model editQuestion="editQuestion"}}
     </div>
   </div>
-</div>
 
-{{new-answer saveAnswer="saveAnswer" question=model}}
+
+<table>
+  <tr>
+    <td><h2>Answers</h2></td>
+    <td>{{new-answer saveAnswer="saveAnswer" question=model}}</td>
+  </tr>
+</table>
+
 <br>
 {{answer-detail editAnswer="editAnswer" question=model}}
+
+
+</div>
+
+<div class="col-md-6">
+  {{google-map question=model}}
+</div>

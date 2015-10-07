@@ -7,10 +7,8 @@ export default Ember.Component.extend({
       this.set('editAnswerForm', true);
     },
     editAnswer(answer) {
-      debugger;
       var today = new Date();
       var params = {
-        user: this.get('user'),
         subject: this.get('subject'),
         content: this.get('content'),
         date_edited: today.toLocaleString(),
