@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     saveQuestion() {
       var today = new Date();
       var params = {
-        author: this.get('author'),
+        user: this.get('user'),
         subject: this.get('subject'),
         content: this.get('content'),
         date_added: today.toLocaleString(),

@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       debugger;
       var today = new Date();
       var params = {
-        author: this.get('author'),
+        user: this.get('user'),
         subject: this.get('subject'),
         content: this.get('content'),
         date_edited: today.toLocaleString(),

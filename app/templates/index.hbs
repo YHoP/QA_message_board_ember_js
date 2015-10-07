@@ -2,7 +2,7 @@
 
 <ul class="list-group">
   {{#each model.questions as |question|}}
-    <li class="list-group-item">{{#link-to 'question' question.id}}{{question.subject}} - by {{question.author}}{{/link-to}}</li>
+    <li class="list-group-item">{{#link-to 'question' question.id}}{{question.subject}} - by {{question.user}}{{/link-to}}</li>
   {{/each}}
 </ul>
 

@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>QAMessageBoard</title>
+    <title>Q &amp; A Message Board</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="https://maps.googleapis.com/maps/api/js?&callback=initialize"
+            async defer></script>
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
@@ -14,7 +15,9 @@
 
     {{content-for 'head-footer'}}
   </head>
-  <body>
+
+  <body onload="initialize()">
+    <div id="map" style="width: 900px; height: 480px;"></div>
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
