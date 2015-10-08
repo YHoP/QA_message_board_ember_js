@@ -9,7 +9,8 @@ export default Ember.Component.extend({
 
     likeAnswer(answer){
       debugger;
-      var voteCount = this.vote + 1;
+      var voteCount = answer.get('vote');
+      voteCount += 1;
       var params = {
         vote: voteCount
       };

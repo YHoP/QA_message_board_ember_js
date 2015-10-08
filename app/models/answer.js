@@ -6,5 +6,5 @@ export default DS.Model.extend({
   content: DS.attr(),
   date_added: DS.attr(),
   date_edited: DS.attr(),
-  vote: DS.attr(),
+  vote: DS.attr('number')
 });
