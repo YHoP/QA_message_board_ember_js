@@ -9,5 +9,8 @@ export default DS.Model.extend({
   longitude: DS.attr(),
   date_added: DS.attr(),
   date_edited: DS.attr(),
-  answers: DS.hasMany('answer', { async: true })
+  answers: DS.hasMany('answer', { async: true }),
+  sortedAnswers: Ember.computed.sort('answers', function(a, b){
+    return b.get('vote') - a.get('vote');
+  })
 });

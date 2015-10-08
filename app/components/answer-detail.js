@@ -14,7 +14,7 @@ export default Ember.Component.extend({
       var params = {
         vote: voteCount
       };
-      this.sendAction('likeAnswer', answer, params)
+      this.sendAction('editAnswer', answer, params)
     }
   }
 });
