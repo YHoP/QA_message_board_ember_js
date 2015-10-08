@@ -19,6 +19,7 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     },
+    
     contentSecurityPolicy: {
       'default-src': "'none'",
       'script-src': "'self' 'unsafe-eval' https://*.googleapis.com https://*.gstatic.com https://*.firebaseio.com",
@@ -28,6 +29,7 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline' https://*.googleapis.com",
       'frame-src': "'self' https://*.firebaseio.com"
     }
+
   };
 
   if (environment === 'development') {

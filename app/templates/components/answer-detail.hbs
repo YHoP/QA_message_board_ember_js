@@ -1,7 +1,9 @@
 {{#each question.answers as |answer|}}
   <div class="panel panel-warning">
     <div class="panel-heading">
-      <h4 class="panel-title">{{answer.user}}</h4>
+      <div class="col-md-3"><h4 class="panel-title">{{answer.user}}</h4></div>
+      <div class="right">{{answer.vote}}
+        <button class="glyphicon glyphicon-thumbs-up" {{action 'likeAnswer' answer}}></button></div>
     </div>
     <div class="panel-body">
         {{answer.content}}

@@ -6,6 +6,7 @@ export default Ember.Component.extend({
     editAnswerShow() {
       this.set('editAnswerForm', true);
     },
+
     editAnswer(answer) {
       var today = new Date();
       var params = {

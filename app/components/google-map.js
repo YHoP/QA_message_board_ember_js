@@ -8,11 +8,13 @@ export default Ember.Component.extend({
         center: this.get('map').center(question.get('latitude'), question.get('longitude')),
         zoom: 10
       };
-      var marker=new google.maps.Marker({
-        position: (question.get('latitude'), question.get('longitude')),
-      });
 
-      marker.setMap(this.get('map'));
+      // var marker=new google.maps.Marker({
+      //   position: (question.get('latitude'), question.get('longitude')),
+      // });
+      //
+      // marker.setMap(this.get('map'));
+
       this.get('map').findMap(container, options);
     }
   }
