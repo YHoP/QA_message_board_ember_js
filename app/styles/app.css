@@ -1,3 +1,17 @@
+.container{
+  max-width: 960px;
+}
+
+.banner{
+  color: white;
+  padding-top: 90px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  width: 940px;
+  height: 225px;
+  background-image: url(http://tybeeisland.com/wp-content/uploads/2013/02/head-banner11.jpg);
+}
+
 .btn a, a:hover{
   color: white;
   text-decoration: none;
@@ -8,7 +22,7 @@ td {
 }
 
 .map-display {
-    height: 600px;
+    height: 240px;
     width: 100%;
 }
 

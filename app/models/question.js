@@ -4,7 +4,6 @@ export default DS.Model.extend({
   user: DS.attr(),
   subject: DS.attr(),
   content: DS.attr(),
-  // location: DS.attr(),
   latitude: DS.attr(),
   longitude: DS.attr(),
   date_added: DS.attr(),

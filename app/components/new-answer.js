@@ -19,6 +19,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         date_added: today.toLocaleString(),
         date_edited: null,
+        // location: this.get('location'),
         vote: 0
       };
       this.set('addNewAnswer', false);
