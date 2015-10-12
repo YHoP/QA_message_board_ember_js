@@ -1,7 +1,13 @@
 # Qa-message-board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### Author: Yvonne Peng
+
+Oregon Crabbing Q & A message board is a place for users can submit a question and other users can respond with answers. Questions will have the content of the question, an author and additional notes. The answers will have the content of the answer and an author. <br>
+The features includes:
+* List out all of the questions that users have asked on the main page, with just the question and the name of the author.<br>
+* Allow users to add and edit questions (you do not need to add delete functionality). Question properties should include question, author and description.<br>
+* Let users click on a question to see all of the question properties.
+* Allow users to add answers for a question. Answers should be added and viewed on the same page as the question they respond to and include the date submitted.
 
 ## Prerequisites
 
@@ -15,7 +21,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/YHoP/QA_message_board_ember_js.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -25,23 +31,6 @@ You will need the following things properly installed on your computer.
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +39,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
